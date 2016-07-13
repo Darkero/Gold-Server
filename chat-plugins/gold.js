@@ -178,7 +178,7 @@ exports.commands = {
 				}
 			}
 			connection.popup('|html|' +
-				'<h3>Gold Authority List</h3>' +
+				'<h3>Crystal Authority List</h3>' +
 				'<b><u>~Administrator' + Gold.pluralFormat(staff['admins'].length) + ' (' + staff['admins'].length + ')</u></b>:<br />' + staff['admins'].join(', ') +
 				'<br /><b><u>&Leader' + Gold.pluralFormat(staff['leaders'].length) + ' (' + staff['leaders'].length + ')</u></b>:<br />' + staff['leaders'].join(', ') +
 				'<br /><b><u>@Moderators (' + staff['mods'].length + ')</u></b>:<br />' + staff['mods'].join(', ') +
