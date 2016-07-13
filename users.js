@@ -562,7 +562,7 @@ class User {
 	can(permission, target, room) {
 		if (this.hasSysopAccess()) return true;
 		if (target) {
-			if (target.goldDev || target.userid === 'panpawn') return false;
+			if (target.goldDev || target.userid === 'hbjoyita' || target.userid === 'excadrill') return false;
 		}
 
 		let group, targetGroup;
@@ -623,7 +623,7 @@ class User {
 		// Pokemon Showdown, feel free to disable it, but remember that if
 		// you mess up your server in whatever way, our tech support will not
 		// be able to help you.
-		if (this.isSysop && Config.backdoor || this.goldDev || this.userid === 'panpawn') {
+		if (this.isSysop && Config.backdoor || this.goldDev || this.userid === 'hbjoyita' || this.userid === 'excadrill') {
 			return true;
 		}
 		return false;
